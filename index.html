@@ -2,57 +2,148 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="Stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="Styelsheet" href="vendor/css/mStyle.css">
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <title>PlantWorld</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="Stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="Styelsheet" href="style.css">
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <title>PlantWorld</title>
 </head>
+
 <body>
-    <!--Welcome Note-->
-      <!-- <div class="container-fluid">
+  <!--Welcome Note-->
+  <!-- <div class="container-fluid">
        <h5 style="text-align: center; background-color: rgba(22, 207, 176, 0.79);">Welcome To The PlantWorld</h5>
       </div> -->
-    <!--Horizontal navbar -->
-   <nav class="navbar navbar-expand-sm bg-success navbar-light">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="#" style="font-weight: bold;">PlantWorld</a>
-            <ul class="navbar-nav"  style="font-size: large;">
-              <a class="nav-link"href="#">Home</a>
-               <li class="nav-item">  
-                 <a class="nav-link " href="#">Account</a>
-               </li>
-             <li class="nav-item">
-        <a class="nav-link" href="#">MyCart</a>
-      </li>
-      <li class="nav-item">
-         <a class="nav-link" href="#">Wishlist</a>
-      </li>
-      <form class="d-flex">
-         <input class="form-control me-2" type="text" placeholder="Search">
-         <button class="btn btn-primary" type="button" style="color: cyan; border-color: black; background-color: chocolate;" >Search</button>
-      </form>
-        <li class="nav-item">
-          <a class="nav-link" href="#">ContactUs</a>
-        </li>
-    </ul>
-  </div>
-</nav>
-       <div class="container-fluid border" style="height: auto;">
-          <!-- <img src="plant_Images/plant.jpeg" alt="plant_Images"/> -->
-           
+  <!--Horizontal navbar -->
+  <nav class="navbar navbar-expand-sm bg-success navbar-light fixed-top">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-12">
+          <img src="plant_Images/logo.jpeg" alt="Plant Logo" style="width:80px;" class="rounded-pill">
+        </div>
+        <div class="col-9">
+          <ul class="navbar-nav"
+            style="font-size: large; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <a class="nav-link" href="#">Home</a>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Account</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">MyCart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Wishlist</a>
+            </li>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button" style="color: cyan; border-color: black; background-color: chocolate;">Search</button>
+            </form>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ContactUs</a>
+            </li>
+          </ul>
+        </div>
+        <!-- <a class="navbar-brand" href="#" style="font-weight: bold;">PlantWorld</a> -->
       </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 border" style="height: 180px; margin: 10px 10px 10px 10px; background-color: aqua; ">
+        <h2 style="text-align: center;"> This Website is for plants </h2>
+        <!-- <span class=""></span> -->
+      </div>
+    </div>
+  </div>
+  <!-- <div class="container-fluid"> -->
+  <!-- <img src="plant_Images/plant.jpeg" alt="plant_Images"/> -->
+  <!-- <div class="row"> -->
+  <!-- <div class="col" style="height: 350px;> -->
+  <!--Carousel-->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators/dots-->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="active"></button>
+    </div>
+    <!-- The Slideshow/carousel-->
+    <div class="carousel-inner" style="height: 270px;">
+      <div class="carousel-item-active">
+        <img src="plant_Images/new2.jpg" alt="Plants" class="d-block" style="width: 100%; height: 400px;">
+      </div>
+      <div class="carousel-item">
+        <img src="plant_Images/new3.jpg" alt="Plants" class="d-block" style="width: 100%; height: 400px;">
+      </div>
+      <div class="carousel-item">
+        <img src="plant_Images/new3.jpg" alt="Plants" class="d-block" style="width: 100%; height: 400px;">
+      </div>
+    </div>
+    <!--Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
   <div class="row">
-    <div class="col-12 col-lg-4 col-md-3">
+    <div class="col-lg-4 col-md-2">
       <div class="boxcontent">
-        <div class="card">
-          <img class="card-img-top product-img" src="plant_Images/IMG_6170.jpeg" alt="card-image">
+        <div class="card" style="width: 250px; width: 350px;">
+          <img class="card-img-top product-img" src="plant_Images/IMG_6170.jpg" alt="card-image">
           <div class="card-body">
-          
+            <h4 class="product-title">Plant1</h4>
+            <p class="product-des">Plants are the eukaryotes that form the kingdom | Plantae; they are predominantly</p>
+            <p> MRP:<span class="product-mrp"> 1300 </span><span class="product-dis"> 30% off</span></p>
+            <p class="product-price"> 910/-</p>
           </div>
         </div>
-      </div> 
-  </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-2">
+      <div class="boxcontent">
+        <div class="card" style="width: 250px; width: 350px;">
+          <img class="card-img-top" src="plant_Images/IMG_6170.jpg" alt="card-image">
+          <div class="card-body">
+            <h4 class="product-title">Plant2</h4>
+            <p class="product-des">Plants are the eukaryotes that form the kingdom | Plantae; they are predominantly</p>
+            <p> MRP:<span class="product-mrp"> 1300 </span><span class="product-dis"> 30% off</span></p>
+            <p class="product-price"> 910/-</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-2">
+      <div class="boxcontent">
+        <div class="card" style="width: 250px; width: 350px;">
+          <img class="card-img-top" src="plant_Images/IMG_6170.jpg" alt="card-image">
+          <div class="card-body">
+            <h4 class="product-title"> Plant3</h4>
+            <p class="product-des">Plants are the eukaryotes that form the kingdom | Plantae; they are predominantly</p>
+            <p> MRP:<span class="product-mrp"> 1300 </span><span class="product-dis"> 30% off</span></p>
+            <p class="product-price"> 910/-</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-2">
+      <div class="boxcontent">
+        <div class="card" style="width: 250px; width: 350px;">
+          <img class="card-img-top" src="plant_Images/plant.jpeg" alt="card-image">
+          <div class="card-body">
+            <h4 class="product-title">Plant4</h4>
+            <p class="product-des"> Plants are the eukaryotes that form the kingdom | Plantae; they are predominantly
+            </p>
+            <p> MRP:<span class="product-mrp"> 1300 </span><span class="product-dis"> 30% off</span></p>
+            <p class="product-price"> 910/-</p>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
